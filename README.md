@@ -4,6 +4,7 @@ Since I've found myself again having too look for 'nvidia drivers', 'screen tear
 ## Day one
 
 First things I did after installing manjaro Xfce.
+
 1 - Install the latest LTS kernel and remove the other I have no interest.
 
 [About Kernel's](wiki.manjaro.org/index.php/Manjaro_Kernels)
