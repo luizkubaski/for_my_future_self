@@ -15,13 +15,13 @@ But basically:
 
 '''bash
 
-##First try  to see if it solves the problem, if not, try another solution (good luck!)
+#First try  to see if it solves the problem, if not, try another solution (good luck!)
 $ xfwm4 --replace --vblank=glx &
 
-##If it solves, do the following in order to save it
+#If it solves, do the following in order to save it
 $  xfconf-query -c xfwm4 -p /general/vblank_mode -s glx
 
-##PS: If it doesn't solve you should consider trying another composite manager
+#PS: If it doesn't solve you should consider trying another composite manager
 
 '''
 
