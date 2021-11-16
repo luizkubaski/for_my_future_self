@@ -14,6 +14,7 @@ For references take a look at:
 But basically:
 
 '''console
+
 ##First try  to see if it solves the problem, if not, try another solution (good luck!)
 $ xfwm4 --replace --vblank=glx &
 
