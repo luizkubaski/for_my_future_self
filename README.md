@@ -8,10 +8,11 @@ First things I did after installing manjaro Xfce.
 
 2 - Screen tearing is reeeeally annoying, so check for xfwm solution  fisrt (then you blame nvidia, which will break lightdm and so on...)
 For references take a look at:
-[Xfwm] (wiki.archlinux.org/title/Xfwm)
+[Xfwm](wiki.archlinux.org/title/Xfwm)
 
 But basically:
-'''bash
+
+''' bash
 ##First try  to see if it solves the problem, if not, try another solution (good luck!)
 $ xfwm4 --replace --vblank=glx &
 
