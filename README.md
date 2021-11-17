@@ -33,3 +33,4 @@ $  xfconf-query -c xfwm4 -p /general/vblank_mode -s glx
 3 - Remember to install an AUR Helper  (usually YaY), base-devel (for building packages), git, chrome and code.
 
 
+TO DO: INSTALL i3wm(-gaps), pywall, polybar, urxvt, ranger  AND PUSH THE CONFIG FILES
