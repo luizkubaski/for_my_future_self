@@ -141,11 +141,7 @@ git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\[\033[00m\]\033[00;32m\]\$(git_branch)\$\[\033[00m\] "
-
-# check the window size after each command and, if necessary
-# update the values of LINES and COLUMNS
-shopt -s checkwinsize
+export PS1="\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\[\033[00m\]\$(git_branch)\$ "
 
 
 # set default keyboard to abnt2
