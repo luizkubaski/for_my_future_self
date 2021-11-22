@@ -145,8 +145,20 @@ Or just use this: `urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xres
 
 Search for how to install fonts, it'll be useful. I've downloaded [Iosevka](https://typeof.net/Iosevka/)
 
+Better than that:
+
+```bash
+
+sudo pacman -Syu powerline-fonts
+
+```
+
 Remember to use `xrdb ~/.Xresources` to reload after changes.
 
+
+#### Vim
+
+Using the [vim-plug](https://github.com/junegunn/vim-plug) plugin manager. Take a look at the `.vimrc` file above.
 
 ###### TO-DO
 
