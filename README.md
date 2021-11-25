@@ -230,6 +230,4 @@ By default they need Terminus and waffle fonts.
 
 
 
-###### TO-DO
 
-**INSTALL:** i3wm(-gaps), pywall, polybar  AND PUSH THE CONFIG FILES
