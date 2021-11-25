@@ -160,6 +160,76 @@ Remember to use `xrdb ~/.Xresources` to reload after changes.
 
 Using the [vim-plug](https://github.com/junegunn/vim-plug) plugin manager. Take a look at the `.vimrc` file above.
 
+
+#### i3-gaps
+
+Yeah, it's time. We're going for `i3-gaps`.
+
+We start with
+
+```bash
+
+sudo pacman -Syu i3-gaps
+
+```
+
+and then
+
+```bash
+
+sudo pacman -Syu polybar
+
+```
+
+to have a nice status bar.
+
+
+To make it work in i3, include `exec_always --no-startup-id ~/.config/polybar/launch.sh`. You probablt don't have a `/polybar/launch.sh` file. Create one and add the following:
+
+```bash
+
+#!/bin/bash
+
+# Terminate already running bar instances
+killall -q polybar
+# If all your bars have ipc enabled, you can also use 
+# polybar-msg cmd quit
+
+# Launch Polybar, using default config location ~/.config/polybar/config
+polybar mybar 2>&1 | tee -a /tmp/polybar.log & disown
+
+echo "Polybar launched..."
+
+```
+
+There's a config file example in `/usr/share/doc/polybar/config`, copy this to `~/.config/polybar/config`. You can see what it looks like running `polybar example` in terminal.
+
+Again, you will need very specific [fonts](https://github.com/polybar/polybar/wiki/Fonts).
+
+You will definetly need `gucharmap` to visualize fonts. go for it.<br />
+Also set `View -> By Unicode Block and Show only glyphs from this font`, then in "Unicode Block" look for "Private Use Area" and you should see the icons. If it's not there, you should probably try another font.
+
+Also use `fc-list | grep <font>` to find the correct font name and `fc-match "<font-name>"` to see if the font matches. If `fc-match` returns the correct font, polybar will also match.
+
+##### Rofi, pywal, calc, networkmanager-dmenu
+
+Looks like evertything now have themes.
+
+There are good themes [here](https://github.com/adi1090x/polybar-themes).
+
+By default they need Terminus and waffle fonts.
+
+
+
+**Rofi** is an app launcher and an alternative to dmenu. <br />
+**pywal** for setting cool colorschemes. <br />
+**calc** for random colors support. <br />
+**networkmanager_dmenu** for network modules. 
+
+
+
+
+
 ###### TO-DO
 
 **INSTALL:** i3wm(-gaps), pywall, polybar  AND PUSH THE CONFIG FILES
