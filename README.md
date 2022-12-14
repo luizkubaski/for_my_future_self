@@ -15,6 +15,9 @@ Install the latest LTS kernel and remove the other I have no interest.
 
 #### Screen tearing
 
+
+***Ignore everything below and just install picom***
+
 Screen tearing is reeeeally annoying, so check for xfwm solution  fisrt (then you blame nvidia, which will break lightdm and so on...)
 
 For references take a look at:
@@ -226,8 +229,13 @@ By default they need Terminus and waffle fonts.
 **calc** for random colors support. <br />
 **networkmanager_dmenu** for network modules. 
 
+#### Mouse Sensitivity
+
+Mouse sensitivity is through the roof and have acceleration by default. (Who is the sadistic who did this?)
+
+Need to install `xorg-xinput` to manage this.
 
 
-
-
+#### Virtualization
+Installed QEMU.
 
